@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <script src="https://kit.fontawesome.com/d965fd55ae.js" crossorigin="anonymous"></script>
+    <title>CO² Footprint</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <div class="header-logo-burger"><i class="fa-solid fa-bars fa-2xl"></i></div>
+            <img src="./img/logo.png" class="header-logo-company">
+        </div>
+        <div class="header-menu">
+           <div class="header-menu-block">
+            <div class="header-menu-block-item"><a href="#titleFilter">Filter</a></div>
+            <div class="header-menu-block-item"><a href="#dataTable">Tabelle</a></div>
+            <div class="header-menu-block-item"><a href="#footer">Footer</a></div>
+           </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content-filter">
+            <h2 id="titleFilter">Konfiguration</h2>
+            <input type="text" class="content-filter-input" id="searchCountry" placeholder="Suchen Sie nach Ländern...">
+            <input type="text" class="content-filter-input" id="searchCompany" placeholder="Suchen Sie nach Unternehmen...">
+            <button id="buttonSortCountry" class="content-filter-button">Länder sortieren</button>
+            <button id="buttonSortCompany" class="content-filter-button">Unternehmen sortieren</button>
+        </div>
+        <div class="content-data">
+            <table class="content-data-table" id="dataTable">
+                <tr class="table-header">
+                    <th>Land [-]</th>
+                    <th>Unternehmen [-]</th>
+                    <th>CO²-Emmission [kg CO²e]</th>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>Unternehmen 1</td>
+                    <td>27.000</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>Unternehmen 2</td>
+                    <td>92.000</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>Unternehmen 3</td>
+                    <td>56.000</td>
+                </tr>
+                <tr>
+                    <td>Austria</td>
+                    <td>Unternehmen 1</td>
+                    <td>19.000</td>
+                </tr>
+                <tr>
+                    <td>Austria</td>
+                    <td>Unternehmen 2</td>
+                    <td>121.000</td>
+                </tr>
+                <tr>
+                    <td>Austria</td>
+                    <td>Unternehmen 3</td>
+                    <td>79.000</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>Unternehmen 1</td>
+                    <td>87.000</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>Unternehmen 2</td>
+                    <td>61.000</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>Unternehmen 3</td>
+                    <td>22.0000</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>Unternehmen 1</td>
+                    <td>43.000</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>Unternehmen 2</td>
+                    <td>77.000</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>Unternehmen 3</td>
+                    <td>7.500</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>Unternehmen 1</td>
+                    <td>18.500</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>Unternehmen 2</td>
+                    <td>85.500</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>Unternehmen 3</td>
+                    <td>178.000</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Unternehmen 1</td>
+                    <td>189.000</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Unternehmen 2</td>
+                    <td>123.000</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Unternehmen 3</td>
+                    <td>91.000</td>
+                </tr>
+                <tr>
+                    <td>UK</td>
+                    <td>Unternehmen 1</td>
+                    <td>89.000</td>
+                </tr>
+                <tr>
+                    <td>UK</td>
+                    <td>Unternehmen 2</td>
+                    <td>49.000</td>
+                </tr>
+                <tr>
+                    <td>UK</td>
+                    <td>Unternehmen 3</td>
+                    <td>39.000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer id="footer" class="footer">
+        <p>© 2023 CO² FOOTPRINT - ALL RIGHTS RESERVED</p>
+        <p>Impressum</p>
+        <p>Nutzungsbedingungen</p>
+        <p>Datenschutzerklärung</p>
+    </footer>
+</body>
+<script src="./js/toggleMenu.js"></script>
+<script src="./js/configureTable.js"></script>
+</html>

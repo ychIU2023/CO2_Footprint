@@ -1,0 +1,250 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0f5156;
+    height: 10vh;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+    width: 20%;
+    margin-left: 1vw;
+}
+
+.header-logo-company {
+    height: 10vh;
+}
+
+.header-logo-burger{
+    display: none;
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
+.header-logo-burger i{
+    transition: 0.5s;
+}
+
+.header-logo-burger i:hover{
+    color: darkgrey;
+    transition: 0.5s;
+}
+
+.header-logo-burger-active{
+    transform: rotate(720deg);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 80%;
+}
+
+.header-menu-block{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu-block-item{
+    margin-left: 5vw;
+    font-weight: bold;
+}
+
+.header-menu-block-item a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.header-menu-block-item a:hover{
+    color: darkgray;
+    transition: 0.5s;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: white;
+    color: #0f5156;
+}
+
+.content-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40vh;
+    width: 30%;
+    margin-top: 5vh;
+    background-color: #0f5156;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+.content-filter-input{
+    max-width: 80%;
+    min-width: 60%;
+    height: 5vh;
+    margin-top: 2vh;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.content-filter-input:hover{
+    background-color: darkgray;
+    transition: 0.5s;
+}
+
+.content-filter-button{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    height: 5vh;
+    max-width: 50%;
+    margin-top: 1vh;
+    transition: 0.5s;
+    color: #0f5156;
+}
+
+.content-filter-button:hover{
+    background-color: darkgray;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+
+.content-data{
+    height: 50vh;
+    min-width: 50vw;
+    overflow-y: scroll;
+}
+
+.content-data-table{
+    color: whitesmoke;
+    background-color: #0f5156;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 5vw;
+}
+
+th{
+    font-size: auto;
+    height: 5vh;
+    width: 15vw;
+    border-bottom: 1px solid whitesmoke;
+}
+
+tr:hover{
+    background-color: darkgray;
+}
+
+tr:first-child:hover{
+    background-color: transparent;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 5vh;
+    background-color: #0f5156;
+    font-size: 0.6vw;
+}
+
+.footer p{
+    margin-left: 3vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header{
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    
+    .header-active{
+        height: 40vh;
+        transition: 0.5s;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .header-logo{
+        width: 100%;
+    }
+
+    .header-logo-company{
+        margin-left: auto;
+    }
+
+    .header-menu{
+        width: 100%;
+        height: 60%;
+    }
+
+    .header-logo-burger{
+        display: block;
+    }
+
+    .header-menu-block{
+        display: none;
+    }
+
+    .header-menu-block-item{
+        margin-left: 0;
+        margin-top: 3vh;
+    }
+
+    .header-menu-block-item:first-child{
+        margin-top: 0;
+    }
+
+    .header-menu-block-active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .content-filter{
+        width: 80vw;
+    }
+
+    .content-data{
+        margin-top: 5vh;
+        height: 60vh;
+    }
+
+    .content-data-table{
+        margin-top: 5vh;
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .footer{
+        flex-direction: column;
+        height: 30vh;
+        font-size: 15px;
+    }
+  }
